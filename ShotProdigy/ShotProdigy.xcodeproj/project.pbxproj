@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6C526F12235BFCC00F00A28 /* Jumpshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C526F02235BFCC00F00A28 /* Jumpshot.swift */; };
+		C6C526F32235C81F00F00A28 /* PressureShots.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C526F22235C81F00F00A28 /* PressureShots.swift */; };
+		C6C526F522398DA600F00A28 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C6C526F422398DA600F00A28 /* video1.mp4 */; };
+		C6C526F72239933400F00A28 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C526F62239933400F00A28 /* logo.png */; };
+		C6C526FB2239960A00F00A28 /* TryPressureShotsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C526FA2239960A00F00A28 /* TryPressureShotsController.swift */; };
+		C6C526FF2239A6E000F00A28 /* Corner3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C526FE2239A6E000F00A28 /* Corner3Controller.swift */; };
+		C6C527012239A98700F00A28 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C6C527002239A98700F00A28 /* video2.mp4 */; };
 		C6F1D418221439FD0060CE26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1D417221439FD0060CE26 /* AppDelegate.swift */; };
 		C6F1D41A221439FD0060CE26 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1D419221439FD0060CE26 /* MainMenu.swift */; };
 		C6F1D41C221439FD0060CE26 /* Drills.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1D41B221439FD0060CE26 /* Drills.swift */; };
@@ -17,7 +24,6 @@
 		C6F1D43A221439FE0060CE26 /* ShotProdigyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1D439221439FE0060CE26 /* ShotProdigyUITests.swift */; };
 		C6F1D44A22143CC00060CE26 /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1D44922143CC00060CE26 /* Social.swift */; };
 		C6F1D44C22143DAF0060CE26 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1D44B22143DAF0060CE26 /* Account.swift */; };
-		C6F1D452221457220060CE26 /* LayupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1D451221457220060CE26 /* LayupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6C526F02235BFCC00F00A28 /* Jumpshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jumpshot.swift; sourceTree = "<group>"; };
+		C6C526F22235C81F00F00A28 /* PressureShots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureShots.swift; sourceTree = "<group>"; };
+		C6C526F422398DA600F00A28 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		C6C526F62239933400F00A28 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C6C526FA2239960A00F00A28 /* TryPressureShotsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryPressureShotsController.swift; sourceTree = "<group>"; };
+		C6C526FE2239A6E000F00A28 /* Corner3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner3Controller.swift; sourceTree = "<group>"; };
+		C6C527002239A98700F00A28 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		C6F1D414221439FD0060CE26 /* ShotProdigy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShotProdigy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F1D417221439FD0060CE26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6F1D419221439FD0060CE26 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
@@ -54,7 +67,6 @@
 		C6F1D43B221439FE0060CE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F1D44922143CC00060CE26 /* Social.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social.swift; sourceTree = "<group>"; };
 		C6F1D44B22143DAF0060CE26 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		C6F1D451221457220060CE26 /* LayupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +117,17 @@
 		C6F1D416221439FD0060CE26 /* ShotProdigy */ = {
 			isa = PBXGroup;
 			children = (
+				C6C526F62239933400F00A28 /* logo.png */,
+				C6C527002239A98700F00A28 /* video2.mp4 */,
+				C6C526F422398DA600F00A28 /* video1.mp4 */,
 				C6F1D417221439FD0060CE26 /* AppDelegate.swift */,
 				C6F1D419221439FD0060CE26 /* MainMenu.swift */,
+				C6C526FA2239960A00F00A28 /* TryPressureShotsController.swift */,
 				C6F1D41B221439FD0060CE26 /* Drills.swift */,
+				C6C526F02235BFCC00F00A28 /* Jumpshot.swift */,
 				C6F1D41D221439FD0060CE26 /* Main.storyboard */,
-				C6F1D451221457220060CE26 /* LayupView.swift */,
+				C6C526FE2239A6E000F00A28 /* Corner3Controller.swift */,
+				C6C526F22235C81F00F00A28 /* PressureShots.swift */,
 				C6F1D44922143CC00060CE26 /* Social.swift */,
 				C6F1D44B22143DAF0060CE26 /* Account.swift */,
 				C6F1D420221439FE0060CE26 /* Assets.xcassets */,
@@ -242,6 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6F1D424221439FE0060CE26 /* LaunchScreen.storyboard in Resources */,
+				C6C526F72239933400F00A28 /* logo.png in Resources */,
+				C6C527012239A98700F00A28 /* video2.mp4 in Resources */,
+				C6C526F522398DA600F00A28 /* video1.mp4 in Resources */,
 				C6F1D421221439FE0060CE26 /* Assets.xcassets in Resources */,
 				C6F1D41F221439FD0060CE26 /* Main.storyboard in Resources */,
 			);
@@ -268,11 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C526FB2239960A00F00A28 /* TryPressureShotsController.swift in Sources */,
 				C6F1D41C221439FD0060CE26 /* Drills.swift in Sources */,
+				C6C526F12235BFCC00F00A28 /* Jumpshot.swift in Sources */,
+				C6C526F32235C81F00F00A28 /* PressureShots.swift in Sources */,
 				C6F1D418221439FD0060CE26 /* AppDelegate.swift in Sources */,
 				C6F1D44A22143CC00060CE26 /* Social.swift in Sources */,
 				C6F1D41A221439FD0060CE26 /* MainMenu.swift in Sources */,
-				C6F1D452221457220060CE26 /* LayupView.swift in Sources */,
+				C6C526FF2239A6E000F00A28 /* Corner3Controller.swift in Sources */,
 				C6F1D44C22143DAF0060CE26 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

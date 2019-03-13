@@ -9,14 +9,16 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    @IBAction func layups(_ sender: Any) {
-        self.performSegue(withIdentifier: "LayupViewSegue", sender: self)
+    
+    @IBAction func Jumpshot(_ sender: Any) {
+        self.performSegue(withIdentifier: "Jumpshotsegue", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }
 

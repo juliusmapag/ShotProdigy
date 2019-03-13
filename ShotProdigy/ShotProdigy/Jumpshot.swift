@@ -16,6 +16,9 @@ class JumpshotViewController: UIViewController {
     @IBAction func Corner3Button(_ sender: Any) {
         self.performSegue(withIdentifier: "Corner3Segue", sender: self)
     }
+    @IBAction func PullUpJumpShot(_ sender: Any) {
+        self.performSegue(withIdentifier: "PullUpJumpShotSegue", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }

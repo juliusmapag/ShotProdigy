@@ -9,7 +9,6 @@ import UIKit
 import AVKit
 
 class Corner3Controller: UIViewController {
-    
     @IBAction func Corner3(_ sender: Any) {
         
             if let path = Bundle.main.path(forResource: "video2", ofType: "mp4") {

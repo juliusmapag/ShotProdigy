@@ -90,14 +90,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSc-of-u7Q">
-                                <rect key="frame" x="37" y="471" width="296" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Advanced Threepointers"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uht-av-qQG">
-                                <rect key="frame" x="121" y="187" width="135" height="46"/>
+                                <rect key="frame" x="121" y="304" width="135" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Jumpshots"/>
@@ -106,17 +100,24 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhh-HU-vTU">
-                                <rect key="frame" x="141" y="265" width="88" height="46"/>
+                                <rect key="frame" x="141" y="382" width="88" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Layups"/>
+                                <connections>
+                                    <action selector="LayUpsButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cUb-Qf-G04"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM0-dr-unf">
-                                <rect key="frame" x="118" y="364" width="135" height="46"/>
+                                <rect key="frame" x="118" y="481" width="135" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Freethrows"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Q9-iB-Q7v">
+                                <rect key="frame" x="79" y="178" width="219" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
@@ -124,6 +125,7 @@
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <segue destination="n5G-hN-haA" kind="showDetail" identifier="Jumpshotsegue" id="pLK-Gd-crc"/>
+                        <segue destination="REd-qy-QjS" kind="show" identifier="LayUpsSegue" id="4hQ-so-fD5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -171,10 +173,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raG-UH-T1A">
-                                <rect key="frame" x="97" y="326" width="179" height="46"/>
+                                <rect key="frame" x="75" y="326" width="223" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Corner Three's"/>
+                                <state key="normal" title="Corner Jumpshots"/>
                                 <connections>
                                     <action selector="Corner3Button:" destination="4fB-Cf-PCf" eventType="touchUpInside" id="VZu-my-BZv"/>
                                 </connections>
@@ -187,7 +189,7 @@
                     <connections>
                         <segue destination="4Jt-Co-raA" kind="show" identifier="Corner3Segue" id="AUa-mI-9nt"/>
                         <segue destination="pAd-BP-9Og" kind="show" identifier="PullUpJumpShotSegue" id="Ub9-ac-jPT"/>
-                        <segue destination="bqm-cN-Y0r" kind="show" identifier="Pressureshotsegue" id="oSc-TN-hv5"/>
+                        <segue destination="bqm-cN-Y0r" kind="show" identifier="Pressureshotsegue" id="IkG-ai-Ooa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSX-hK-CeW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWO-BF-24D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4076" y="-461.01949025487261"/>
+            <point key="canvasLocation" x="3481" y="-361"/>
         </scene>
         <!--Pressure Shots Controller-->
         <scene sceneID="qjl-W7-lOq">
@@ -313,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cj-3w-acu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="1219"/>
+            <point key="canvasLocation" x="3481" y="1200"/>
         </scene>
         <!--Pull Up Jump Shots Controller-->
         <scene sceneID="qlQ-ZL-3Ix">
@@ -460,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfx-W5-hTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4265" y="589"/>
+            <point key="canvasLocation" x="4329" y="415"/>
         </scene>
         <!--Item-->
         <scene sceneID="v0Z-yw-y2U">
@@ -477,6 +479,260 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4mi-rU-eIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1" y="806"/>
+        </scene>
+        <!--Lay Up Menu View Controller-->
+        <scene sceneID="lHl-Ja-my6">
+            <objects>
+                <viewController id="REd-qy-QjS" customClass="LayUpMenuViewController" customModule="ShotProdigy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vi7-gA-kBg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shot Prodigy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnG-Jx-fOl">
+                                <rect key="frame" x="86" y="89" width="198" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Layup Drills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7P-D1-gVr">
+                                <rect key="frame" x="109" y="148" width="151" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq2-5f-Tlo">
+                                <rect key="frame" x="82" y="224" width="212" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Left Hand Layups"/>
+                                <connections>
+                                    <action selector="LeftHandLaups:" destination="REd-qy-QjS" eventType="touchUpInside" id="ONw-9s-BJf"/>
+                                    <action selector="PressureShot:" destination="4fB-Cf-PCf" eventType="touchUpInside" id="o3l-c3-tQW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfl-Wi-oTA">
+                                <rect key="frame" x="56" y="310" width="264" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Between Legs Layups"/>
+                                <connections>
+                                    <action selector="BetweenLegsLayup:" destination="REd-qy-QjS" eventType="touchUpInside" id="khs-Xw-ouP"/>
+                                    <action selector="LeftHandLaups:" destination="REd-qy-QjS" eventType="touchUpInside" id="WpO-A5-ocf"/>
+                                    <action selector="PressureShot:" destination="4fB-Cf-PCf" eventType="touchUpInside" id="Qo3-Hq-wHh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-Fx-eqC">
+                                <rect key="frame" x="111" y="385" width="146" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="360 Layups"/>
+                                <connections>
+                                    <action selector="LeftHandLaups:" destination="REd-qy-QjS" eventType="touchUpInside" id="1ja-vf-liz"/>
+                                    <action selector="PressureShot:" destination="4fB-Cf-PCf" eventType="touchUpInside" id="byb-OX-HhT"/>
+                                    <action selector="SpinLayup:" destination="REd-qy-QjS" eventType="touchUpInside" id="FOX-4U-jgB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JIu-Tg-uOW"/>
+                    </view>
+                    <connections>
+                        <segue destination="w7c-b1-KTP" kind="show" identifier="LeftHandLayUpsSegue" id="uLN-fv-PTG"/>
+                        <segue destination="FvM-h4-G6G" kind="showDetail" identifier="BetweenLegsSegue" id="9w3-OP-Ug7"/>
+                        <segue destination="kPl-5C-gDd" kind="showDetail" identifier="SpinLayupSegue" id="ZaY-pb-77O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Zn-PX-Lec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561" y="1229"/>
+        </scene>
+        <!--Left Hand Layups Controller-->
+        <scene sceneID="Cnx-4Y-YU0">
+            <objects>
+                <viewController id="w7c-b1-KTP" customClass="LeftHandLayupsController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WET-0H-uKE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shot Prodigy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puw-MP-LGA">
+                                <rect key="frame" x="90" y="81" width="198" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3x-5v-qeH">
+                                <rect key="frame" x="66" y="420" width="246" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Click here to watch tutorial!"/>
+                                <connections>
+                                    <action selector="PlayLeftHandDrill:" destination="w7c-b1-KTP" eventType="touchUpInside" id="ovJ-24-Uz9"/>
+                                    <action selector="button1:" destination="bqm-cN-Y0r" eventType="touchUpInside" id="eps-5p-R5V"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-Ld-TqI">
+                                <rect key="frame" x="82" y="197" width="214" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">This drill teaches the user how to be able to shoot under pressure so they can make big time shots in clutch moments! The drill starts off with the player running to a spot with another player throwing the ball, running at them to try and create pressure and the user must be able to knock down the shot! Requires 2 players</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcL-Fh-xVF">
+                                <rect key="frame" x="121" y="466" width="137" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Try drill!"/>
+                                <connections>
+                                    <action selector="TryDrillButton1:" destination="bqm-cN-Y0r" eventType="touchUpInside" id="Qjc-8l-BXL"/>
+                                    <action selector="TryLeftHandDrill:" destination="w7c-b1-KTP" eventType="touchUpInside" id="vXA-82-OPD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Left Hand Layups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-RM-zRm">
+                                <rect key="frame" x="53" y="132" width="272" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="K7n-fM-kfY"/>
+                    </view>
+                    <connections>
+                        <segue destination="gIe-jI-NfX" kind="showDetail" identifier="TryLeftHandDrillSegue" id="FYu-5A-Doi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11w-oc-0uI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2370" y="1228"/>
+        </scene>
+        <!--Spin Layup Controller-->
+        <scene sceneID="SHR-CB-Dl5">
+            <objects>
+                <viewController id="kPl-5C-gDd" customClass="SpinLayupController" customModule="ShotProdigy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wMl-q2-GlT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shot Prodigy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkC-rq-dx7">
+                                <rect key="frame" x="77" y="118" width="198" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx7-r8-PJ5">
+                                <rect key="frame" x="53" y="457" width="246" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Click here to watch tutorial!"/>
+                                <connections>
+                                    <action selector="PlaySpinDrill:" destination="kPl-5C-gDd" eventType="touchUpInside" id="ec2-jn-0fv"/>
+                                    <action selector="button1:" destination="bqm-cN-Y0r" eventType="touchUpInside" id="LBD-kD-uvc"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M1w-pG-NFh">
+                                <rect key="frame" x="69" y="234" width="214" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">This drill teaches the user how to be able to shoot under pressure so they can make big time shots in clutch moments! The drill starts off with the player running to a spot with another player throwing the ball, running at them to try and create pressure and the user must be able to knock down the shot! Requires 2 players</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adH-C3-GBG">
+                                <rect key="frame" x="108" y="503" width="137" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Try drill!"/>
+                                <connections>
+                                    <action selector="TryDrillButton1:" destination="bqm-cN-Y0r" eventType="touchUpInside" id="Dao-5r-WiM"/>
+                                    <action selector="TrySpinLayup:" destination="kPl-5C-gDd" eventType="touchUpInside" id="dXe-R9-M6z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="360 Layup " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuh-4O-msp">
+                                <rect key="frame" x="95" y="179" width="177" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3le-YG-d6P"/>
+                    </view>
+                    <connections>
+                        <segue destination="gIe-jI-NfX" kind="showDetail" identifier="TrySpinLayupSegue" id="paG-c9-jw7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWt-wU-vAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561" y="2038"/>
+        </scene>
+        <!--Between Legs Controller-->
+        <scene sceneID="N80-I1-Oqy">
+            <objects>
+                <viewController id="FvM-h4-G6G" customClass="BetweenLegsController" customModule="ShotProdigy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3VD-7A-jcn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shot Prodigy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ml-jx-kN0">
+                                <rect key="frame" x="88" y="98" width="198" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Between Legs Layup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8M-gi-C2X">
+                                <rect key="frame" x="38" y="149" width="321" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJA-Iw-s65">
+                                <rect key="frame" x="64" y="437" width="246" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Click here to watch tutorial!"/>
+                                <connections>
+                                    <action selector="PlayBetweenLegs:" destination="FvM-h4-G6G" eventType="touchUpInside" id="a0U-gO-s5w"/>
+                                    <action selector="button1:" destination="bqm-cN-Y0r" eventType="touchUpInside" id="Sz0-lY-ezc"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gsd-Ii-Jeb">
+                                <rect key="frame" x="80" y="214" width="214" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">This drill teaches the user how to be able to shoot under pressure so they can make big time shots in clutch moments! The drill starts off with the player running to a spot with another player throwing the ball, running at them to try and create pressure and the user must be able to knock down the shot! Requires 2 players</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpC-Vz-fIj">
+                                <rect key="frame" x="119" y="483" width="137" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Try drill!"/>
+                                <connections>
+                                    <action selector="TryBetweenLegsDrill:" destination="FvM-h4-G6G" eventType="touchUpInside" id="wZa-AS-VA9"/>
+                                    <action selector="TryDrillButton1:" destination="bqm-cN-Y0r" eventType="touchUpInside" id="Qb3-YB-z9G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mlg-yK-bU6"/>
+                    </view>
+                    <connections>
+                        <segue destination="gIe-jI-NfX" kind="showDetail" identifier="TryBetweenLegsDrillSegue" id="CVW-Be-NX8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cC-nn-2oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="2060"/>
         </scene>
         <!--Item-->
         <scene sceneID="ODo-z7-3nu">
@@ -558,7 +814,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="of2-mc-gq9"/>
-        <segue reference="hrf-GP-9IR"/>
+        <segue reference="paG-c9-jw7"/>
+        <segue reference="lzU-1b-eKA"/>
     </inferredMetricsTieBreakers>
 </document>

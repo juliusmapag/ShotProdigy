@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C67FFAD72241868100D75063 /* LayUpMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FFAD62241868100D75063 /* LayUpMenuController.swift */; };
+		C67FFAD9224189F800D75063 /* LeftHandLayupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FFAD8224189F800D75063 /* LeftHandLayupsController.swift */; };
+		C67FFADB22418EAC00D75063 /* BetweenLegsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FFADA22418EAC00D75063 /* BetweenLegsController.swift */; };
+		C67FFADF224190E600D75063 /* SpinLayUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FFADE224190E600D75063 /* SpinLayUpController.swift */; };
+		C67FFAE12241943700D75063 /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE02241943700D75063 /* video4.mp4 */; };
+		C67FFAE22241943700D75063 /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE02241943700D75063 /* video4.mp4 */; };
+		C67FFAE32241943700D75063 /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE02241943700D75063 /* video4.mp4 */; };
+		C67FFAE62241950E00D75063 /* Video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE42241950D00D75063 /* Video5.mp4 */; };
+		C67FFAE72241950E00D75063 /* Video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE42241950D00D75063 /* Video5.mp4 */; };
+		C67FFAE82241950E00D75063 /* Video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE42241950D00D75063 /* Video5.mp4 */; };
+		C67FFAE92241950E00D75063 /* Video6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE52241950E00D75063 /* Video6.mp4 */; };
+		C67FFAEA2241950E00D75063 /* Video6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE52241950E00D75063 /* Video6.mp4 */; };
+		C67FFAEB2241950E00D75063 /* Video6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C67FFAE52241950E00D75063 /* Video6.mp4 */; };
 		C6C526F12235BFCC00F00A28 /* Jumpshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C526F02235BFCC00F00A28 /* Jumpshot.swift */; };
 		C6C526F32235C81F00F00A28 /* PressureShots.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C526F22235C81F00F00A28 /* PressureShots.swift */; };
 		C6C526F522398DA600F00A28 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C6C526F422398DA600F00A28 /* video1.mp4 */; };
@@ -46,6 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C67FFAD62241868100D75063 /* LayUpMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayUpMenuController.swift; sourceTree = "<group>"; };
+		C67FFAD8224189F800D75063 /* LeftHandLayupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftHandLayupsController.swift; sourceTree = "<group>"; };
+		C67FFADA22418EAC00D75063 /* BetweenLegsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetweenLegsController.swift; sourceTree = "<group>"; };
+		C67FFADE224190E600D75063 /* SpinLayUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinLayUpController.swift; sourceTree = "<group>"; };
+		C67FFAE02241943700D75063 /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video4.mp4; sourceTree = "<group>"; };
+		C67FFAE42241950D00D75063 /* Video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video5.mp4; sourceTree = "<group>"; };
+		C67FFAE52241950E00D75063 /* Video6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video6.mp4; sourceTree = "<group>"; };
 		C6C526F02235BFCC00F00A28 /* Jumpshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jumpshot.swift; sourceTree = "<group>"; };
 		C6C526F22235C81F00F00A28 /* PressureShots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureShots.swift; sourceTree = "<group>"; };
 		C6C526F422398DA600F00A28 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
@@ -122,6 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				C6C526F62239933400F00A28 /* logo.png */,
+				C67FFAE42241950D00D75063 /* Video5.mp4 */,
+				C67FFAE52241950E00D75063 /* Video6.mp4 */,
+				C67FFAE02241943700D75063 /* video4.mp4 */,
 				C6C527062239B40000F00A28 /* video3.mp4 */,
 				C6C527002239A98700F00A28 /* video2.mp4 */,
 				C6C526F422398DA600F00A28 /* video1.mp4 */,
@@ -129,8 +152,12 @@
 				C6F1D419221439FD0060CE26 /* MainMenu.swift */,
 				C6C526FA2239960A00F00A28 /* TryPressureShotsController.swift */,
 				C6C527042239B37900F00A28 /* PullUpJumpShotsController.swift */,
+				C67FFAD8224189F800D75063 /* LeftHandLayupsController.swift */,
+				C67FFADA22418EAC00D75063 /* BetweenLegsController.swift */,
+				C67FFADE224190E600D75063 /* SpinLayUpController.swift */,
 				C6C526F22235C81F00F00A28 /* PressureShots.swift */,
 				C6F1D41B221439FD0060CE26 /* Drills.swift */,
+				C67FFAD62241868100D75063 /* LayUpMenuController.swift */,
 				C6C526F02235BFCC00F00A28 /* Jumpshot.swift */,
 				C6F1D41D221439FD0060CE26 /* Main.storyboard */,
 				C6C526FE2239A6E000F00A28 /* Corner3Controller.swift */,
@@ -265,10 +292,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67FFAE62241950E00D75063 /* Video5.mp4 in Resources */,
 				C6F1D424221439FE0060CE26 /* LaunchScreen.storyboard in Resources */,
+				C67FFAE92241950E00D75063 /* Video6.mp4 in Resources */,
 				C6C526F72239933400F00A28 /* logo.png in Resources */,
 				C6C527012239A98700F00A28 /* video2.mp4 in Resources */,
 				C6C526F522398DA600F00A28 /* video1.mp4 in Resources */,
+				C67FFAE12241943700D75063 /* video4.mp4 in Resources */,
 				C6F1D421221439FE0060CE26 /* Assets.xcassets in Resources */,
 				C6F1D41F221439FD0060CE26 /* Main.storyboard in Resources */,
 				C6C527072239B40000F00A28 /* video3.mp4 in Resources */,
@@ -279,6 +309,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67FFAE22241943700D75063 /* video4.mp4 in Resources */,
+				C67FFAE72241950E00D75063 /* Video5.mp4 in Resources */,
+				C67FFAEA2241950E00D75063 /* Video6.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +319,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67FFAE32241943700D75063 /* video4.mp4 in Resources */,
+				C67FFAE82241950E00D75063 /* Video5.mp4 in Resources */,
+				C67FFAEB2241950E00D75063 /* Video6.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,16 +332,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67FFADB22418EAC00D75063 /* BetweenLegsController.swift in Sources */,
 				C6C526FB2239960A00F00A28 /* TryPressureShotsController.swift in Sources */,
+				C67FFAD9224189F800D75063 /* LeftHandLayupsController.swift in Sources */,
 				C6F1D41C221439FD0060CE26 /* Drills.swift in Sources */,
 				C6C526F12235BFCC00F00A28 /* Jumpshot.swift in Sources */,
 				C6C526F32235C81F00F00A28 /* PressureShots.swift in Sources */,
 				C6F1D418221439FD0060CE26 /* AppDelegate.swift in Sources */,
+				C67FFADF224190E600D75063 /* SpinLayUpController.swift in Sources */,
 				C6F1D44A22143CC00060CE26 /* Social.swift in Sources */,
 				C6F1D41A221439FD0060CE26 /* MainMenu.swift in Sources */,
 				C6C527052239B37900F00A28 /* PullUpJumpShotsController.swift in Sources */,
 				C6C526FF2239A6E000F00A28 /* Corner3Controller.swift in Sources */,
 				C6F1D44C22143DAF0060CE26 /* Account.swift in Sources */,
+				C67FFAD72241868100D75063 /* LayUpMenuController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
